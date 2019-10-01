@@ -1,0 +1,44 @@
+.header {
+ display: grid;
+ grid-template-columns: 60vw 40vw;
+ height: 100vh;
+ padding: 4rem 0;
+ overflow: hidden;
+
+ &__image {
+  background-image: linear-gradient(to right bottom,
+    rgba($color-primary, 0.8),
+    rgba($color-primary-dark, 0.8)),
+   url("../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+
+ }
+
+ &__logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  margin-left: -8%;
+  background: rgb(250, 32, 32);
+  background: linear-gradient(35deg, rgba(250, 32, 32, 1) 0%, rgba(255, 121, 121, 1) 100%);
+ }
+
+ &__logo {
+  width: 70%;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+   padding-bottom: 2rem;
+  }
+
+  &-img {
+   width: 100%;
+  }
+ }
+
+
+}

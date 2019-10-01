@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+// COLOR VARIABLES
+$color-primary: #1B9CFC;
+$color-primary-dark: #0092ff;
+
+// $color-secondary: #fe4a49;
+$color-secondary: #fa2020;
+// $color-secondary-dark: #e74443;
+$color-secondary-dark: #f54b3f;
+
+// $color-secondary-dark: #3c3ed0;
+// $color-secondary: #9d49fe;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+$font-color: black;
+
+
+// FONT VARIABLES
+$font-primary: 'Lato',
+sans-serif;
+$font-display: 'Josefin Sans',
+sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+}
+
+html {
+ box-sizing: border-box;
+ font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+ font-family: $font-primary;
+ color: $color-grey-dark-2;
+ font-weight: 300;
+ line-height: 1.6;
+}
