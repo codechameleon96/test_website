@@ -1,0 +1,17 @@
+.swiper-slide {
+ text-align: center;
+ /* Center slide text vertically */
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-items: center;
+ background-color: #fff;
+ border-radius: 3px;
+ height: 21rem;
+ box-sizing: initial;
+}
+
+
+.slider-padding {
+ padding: 1.2rem 1.5rem;
+}

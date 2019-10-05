@@ -1,0 +1,40 @@
+.about {
+ background: url('../img/about-img_3.jpg');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+ padding: 3rem;
+
+
+ &__icon {
+  fill: #78ffd6;
+  width: 7rem;
+  height: 7rem;
+
+  &-startup {
+   fill: #623BB8;
+  }
+
+  &-wallet {
+   fill: #FEE827;
+  }
+
+  &-quality {
+   fill: #E946A6;
+  }
+
+  &-services {
+   fill: #6FDFED;
+  }
+ }
+
+ &__text {
+  font-size: 1.3rem;
+ }
+
+ &__heading {
+  font-family: $font-heading;
+  font-size: 2.5rem;
+ }
+}
