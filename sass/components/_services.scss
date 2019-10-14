@@ -1,0 +1,92 @@
+.services {
+ @include section-margin;
+ padding: 2rem;
+
+ &__wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 5rem;
+  grid-gap: 1rem;
+
+  @include respond(tab) {
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 2rem;
+   //600+
+  }
+
+  @include respond(laptop) {
+   grid-template-columns: repeat(3, 1fr);
+   //600+
+  }
+
+ }
+
+
+ &__box {
+  padding: 4rem 2rem;
+  margin-bottom: 5rem;
+  border: 2px solid $blue;
+  position: relative;
+  background: #fafafa;
+  text-align: center;
+  border-image-source: linear-gradient(266deg, rgba(0, 184, 255, 1) 0%, rgba(214, 98, 231, 1) 62%);
+  border-image-slice: 1;
+ }
+
+
+ &__icon-wrap {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 35px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 7rem;
+  height: 7rem;
+  background: #fff;
+  padding: 1rem;
+
+  @include respond(tab) {
+   width: 6rem;
+   height: 6rem;
+  }
+ }
+
+ &__box:hover &__icon-wrap {
+  background: #fff;
+  border: 2px solid $blue;
+ }
+
+ &__icon {
+  fill: $blue !important;
+ }
+
+ .vinyl-icon {
+  fill: $blue !important;
+ }
+
+ &__title {
+  a {
+   text-decoration: none;
+   font-size: 1.5rem;
+   color: $gray-dark;
+   font-family: $font-display;
+  }
+ }
+
+ &__description {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
+  @include respond(tab) {
+   font-size: 1.2rem;
+   line-height: 1.1;
+  }
+ }
+
+}

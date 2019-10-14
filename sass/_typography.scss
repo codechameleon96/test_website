@@ -14,13 +14,169 @@
  margin-bottom: 8rem;
 }
 
-.section-heading {
- font-family: $font-heading;
- text-transform: uppercase;
- font-size: 3rem;
+.width-70 {
+ width: 100%;
+ margin: 0 auto;
+
+ @include respond(tab) {
+  width: 90%;
+  //600+
+ }
+
+ @include respond(tab-big) {
+  width: 80%;
+  //900+
+ }
+
+ @include respond(laptop) {
+  width: 70%;
+  //1200+
+ }
+
+}
+
+body {
+ color: $gray-dark;
+ font-family: $font-primary;
+ font-size: $default-font-size;
+ font-weight: 400;
+ line-height: 1.60;
+ letter-spacing: -0.30px;
+ word-spacing: -0.10px;
 }
 
 
-.heading-secondary {
- font-size: 3rem;
+h1 {
+ font-family: $font-display;
+ font-size: 32px;
+ font-weight: 700;
+ line-height: 1.20;
+ opacity: 1.00;
+ // margin-top: 0px;
+ // margin-bottom: 1rem;
+ letter-spacing: -0.72px;
+ word-spacing: 0.00px;
+ text-transform: uppercase;
+ color: $gray-dark;
+
+ @include respond(tab) {
+  font-size: 50px;
+  //600+
+ }
+
+ @include respond(tab-big) {
+  font-size: 70px;
+  //900+
+ }
+
+ @include respond(laptop) {
+  font-size: 80px;
+  //1200+
+ }
+
+
+}
+
+h2 {
+ font-family: $font-display;
+ font-size: 26px;
+ font-weight: 700;
+ line-height: 1.20;
+ // margin-top: 30px;
+ margin-bottom: 1rem;
+ letter-spacing: -0.72px;
+ word-spacing: 0.00px;
+ text-transform: uppercase;
+ color: $gray-dark;
+
+ @include respond(tab) {
+  font-size: 35px;
+  //600+
+ }
+
+ @include respond(tab-big) {
+  font-size: 45px;
+  //900+
+ }
+
+ @include respond(laptop) {
+  font-size: 55px;
+  //900+
+ }
+}
+
+h3 {
+ font-family: $font-display;
+ font-size: 22px;
+ font-weight: 500;
+ line-height: 1.20;
+ // margin-top: 3rem;
+ margin-bottom: .5rem;
+ letter-spacing: 0.00px;
+ word-spacing: 0.00px;
+ // text-transform: uppercase;
+ color: $gray-dark;
+
+ @include respond(tab) {
+  font-size: 26px;
+  //600+
+ }
+
+ @include respond(tab-big) {
+  font-size: 30px;
+  //900+
+ }
+
+ @include respond(laptop) {
+  font-size: 36px;
+  //900+
+ }
+
+}
+
+h4 {
+ font-family: $font-display;
+ font-size: 21.6px;
+ font-weight: 700;
+ line-height: 1.20;
+ // margin-top: 30px;
+ margin-bottom: .5rem;
+ letter-spacing: 0.00px;
+ word-spacing: 0.00px;
+ color: $gray-dark;
+
+ @include respond(tab) {
+  font-size: 24px;
+  //600+
+ }
+
+ @include respond(tab-big) {
+  font-size: 26.4px;
+  //900+
+ }
+
+ @include respond(laptop) {
+  font-size: 28.8px;
+  //900+
+ }
+
+}
+
+p {
+ font-family: $font-primary;
+ font-size: 13px;
+ font-weight: 400;
+ line-height: 1.60;
+ opacity: 0.70;
+ // margin-top: 0px;
+ // margin-bottom: 2.5rem;
+ letter-spacing: -0.30px;
+ word-spacing: -0.10px;
+ text-transform: none;
+ color: $gray;
+
+ @include respond(tab) {
+  font-size: 15px;
+  //600+
+ }
 }

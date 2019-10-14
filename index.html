@@ -7,156 +7,520 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
 
-  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/simpleLIghtbox.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="container">
   <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav__wrap">
+      <img src="img/logo.png" alt="" class="nav__logo" />
 
-  <div class="navigation">
-    <div class="logo">
-      <img src="img/logo.png" alt="" class="logo__img">
+      <div class="nav__links">
+        <a href="#">Home</a>
+        <a href="#">choose</a>
+        <a href="#">Client</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="nav__icon">
+        <span class="nav__icon-bar">&nbsp;</span>
+      </div>
     </div>
 
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-    <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
-    </label>
-
-    <div class="navigation__background">&nbsp;</div>
-
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Home</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">About</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Client</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Services</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Portfolio</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Team</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <div class="nav__dropdown">
+      <a href="#">Home</a>
+      <a href="#">choose</a>
+      <a href="#">Client</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
 
   <!-- HEADER -->
   <header class="header">
+    <img class="header__img-1" src="img/header-bg.png" alt="" />
+
     <h1 class="header__heading">
       <span class="">Welcome to </span><br />
       <span class="header__devgroups">Devgroups</span>
     </h1>
 
-    <div class="header__imageContainer">
-      <img class="header__img header__img-1" src="img/header-bg.png" alt="">
-      <img class="header__img header__img-2" src="img/header-bg-2.png" alt="">
-    </div>
-
+    <img class="header__img-2" src="img/header-bg-2.png" alt="" />
   </header>
-
-  <!-- About Us -->
-
-  <section class="about">
-    <h2 class="about__heading section-heading">
-      Why Choose Us
-    </h2>
-
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-
-
-        <!-- SWIPER SLIDE START 111 -->
-        <div class="swiper-slide">
-          <div class="slider-padding">
-            <svg class="about__icon about__icon-startup">
-              <use xlink:href="img/sprite.svg#startup"></use>
-            </svg>
-            <div class="about__heading heading-secondary">
-              Speed
-            </div>
-            <div class="about__text">
-              Our team works fast to bring you the best posters, brochures, and other products.
-            </div>
-          </div>
-        </div>
-        <!-- SWIPER SLIDE END -->
-
-
-        <!-- SWIPER SLIDE START 222 -->
-        <div class="swiper-slide">
-          <div class="slider-padding">
-            <svg class="about__icon about__icon-wallet">
-              <use xlink:href="img/sprite.svg#wallet"></use>
-            </svg>
-            <div class="about__heading heading-secondary">
-              Low Prices
-            </div>
-            <div class="about__text">
-              Our affordable pricing policy allows you to save a lot on our premium printing services.
-            </div>
-          </div>
-        </div>
-        <!-- SWIPER SLIDE END -->
-
-        <!-- SWIPER SLIDE START 333 -->
-        <div class="swiper-slide">
-          <div class="slider-padding">
-            <svg class="about__icon about__icon-quality">
-              <use xlink:href="img/sprite.svg#quality"></use>
-            </svg>
-            <div class="about__heading heading-secondary">
-              High Quality
-            </div>
-            <div class="about__text">
-              Our team works fast to bring you the best posters, brochures, and other products.
-            </div>
-          </div>
-        </div>
-        <!-- SWIPER SLIDE END -->
-
-        <!-- SWIPER SLIDE START 444 -->
-        <div class="swiper-slide">
-          <div class="slider-padding">
-            <svg class="about__icon about__icon-services">
-              <use xlink:href="img/sprite.svg#customer-support"></use>
-            </svg>
-            <div class="about__heading heading-secondary">
-              Range of Services
-            </div>
-            <div class="about__text">
-              We deliver a variety of printing services for you to choose what you need the most.
-            </div>
-          </div>
-        </div>
-        <!-- SWIPER SLIDE END -->
-
-      </div>
-      <!-- END of --- swiper wrapper -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- END of --- swiper-->
-  </section>
-
-
-
 </body>
 
+<!-- Other Brands -->
+<section class="other-brands mb-hg">
+  <img src="img/dv_logo_1.jpg" alt="" />
+  <img src="img/dv_logo_2.png" alt="" />
+  <img src="img/dv_logo_3.png" alt="" />
+</section>
+
+<!-- choose Us -->
+<section class="choose mb-md">
+  <h2 class="choose__heading section-heading mb-lg">
+    Why Choose Us
+  </h2>
+
+  <!-- Swiper -->
+  <div class="swiper-container choose-swiper-container">
+    <div class="swiper-wrapper">
+      <!-- SWIPER SLIDE START 1-->
+      <div class="swiper-slide">
+        <svg class="choose__icon choose__icon-startup">
+          <use xlink:href="img/sprite.svg#startup"></use>
+        </svg>
+        <div class="swiper-right">
+          <h4 class="swiper-heading">
+            Speed
+          </h4>
+          <p class="swiper-text">
+            Our team works fast to bring you the best posters, brochures, and
+            other products.
+          </p>
+        </div>
+      </div>
+      <!-- SWIPER SLIDE END -->
+
+      <!-- SWIPER SLIDE START 2 -->
+      <div class="swiper-slide">
+        <svg class="choose__icon-wallet">
+          <use xlink:href="img/sprite.svg#wallet"></use>
+        </svg>
+        <div class="swiper-right">
+          <h4 class="swiper-heading">
+            Low Prices
+          </h4>
+          <p class="swiper-text">
+            Our affordable pricing policy allows you to save a lot on our
+            premium printing services.
+          </p>
+        </div>
+      </div>
+      <!-- SWIPER SLIDE END -->
+
+      <!-- SWIPER SLIDE START 3 -->
+      <div class="swiper-slide">
+        <svg class="choose__icon-quality">
+          <use xlink:href="img/sprite.svg#quality"></use>
+        </svg>
+        <div class="swiper-right">
+          <h4 class="swiper-heading">
+            High Quality
+          </h4>
+          <p class="swiper-text">
+            Our team works fast to bring you the best posters, brochures, and
+            other products.
+          </p>
+        </div>
+      </div>
+      <!-- SWIPER SLIDE END -->
+
+      <!-- SWIPER SLIDE START 4 -->
+      <div class="swiper-slide">
+        <svg class="choose__icon-services">
+          <use xlink:href="img/sprite.svg#customer-support"></use>
+        </svg>
+        <div class="swiper-right">
+          <h4 class="swiper-heading">
+            Range Of Services
+          </h4>
+          <p class="swiper-text">
+            We deliver a variety of printing services for you to choose what
+            you need the most.
+          </p>
+        </div>
+      </div>
+      <!-- SWIPER SLIDE END -->
+    </div>
+    <!-- END of --- swiper wrapper -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- END of --- swiper-->
+</section>
+
+<section class="about width-70">
+  <div class="about__content">
+    <h2 class="about-h2">About Us</h2>
+    <h3 class="about-h3">Who We Are</h3>
+    <div class="about__pagination">
+      <div class="about__pagination-text about__pagination-1 active">ABOUT</div>
+      <div class="about__pagination-text about__pagination-2">OUR MISSION</div>
+      <div class="about__pagination-text about__pagination-3">OUR VISION</div>
+    </div>
+    <p class="about__content-text about-content active">
+      Since its foundation, PrintHouse offers best printing solutions and
+      services of high-quality to individual and corporate customers
+      throughout the USA.
+    </p>
+
+    <p class="about__content-text mission-content">
+      Our mission is to surpass our client's expectations on every project
+      with superior quality, service, and value. We treat every customer
+      with sincerity and fairness.
+    </p>
+
+    <p class="about__content-text vision-content">
+      We aim to help our clients create printed materials of any
+      complexity, while improving our solutions. Our qualified team can
+      put any idea of our customers into reality.
+    </p>
+  </div>
+  </div>
+  <div class="about__gallery">
+    <img src="img/about-img.png" alt="" />
+  </div>
+</section>
+
+<section class="clients ">
+ <div class="clients_wrap width-70">
+  <h2 class="clients-h2">Clients</h2>
+
+  <div class="clients__logos">
+    <img src="img/companies/future.png" alt="" class="clients__img" />
+    <img src="img/companies/axis.png" alt="" class="clients__img" />
+    <img src="img/companies/casio.png" alt="" class="clients__img" />
+    <img src="img/companies/fasttrack.png" alt="" class="clients__img" />
+    <img src="img/companies/icici.png" alt="" class="clients__img" />
+    <img src="img/companies/muthoot.png" alt="" class="clients__img" />
+    <img src="img/companies/securens.png" alt="" class="clients__img" />
+    <img src="img/companies/mcdonald.png" alt="" class="clients__img" />
+    <img src="img/companies/nilgiris.png" alt="" class="clients__img" />
+    <img src="img/companies/easyday.png" alt="" class="clients__img" />
+    <img src="img/companies/prestige.png" alt="" class="clients__img" />
+    <img src="img/companies/porter.png" alt="" class="clients__img" />
+  </div>
+ </div>
+</section>
+
+<section class="services width-70">
+  <h2 class="services-heading">Services</h2>
+
+  <div class="services__wrap">
+    <!-- BOX - 1 - 3d cube -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#cube"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">3d Boards</a></h4>
+      <p class="services__description">
+        3D boards are now quite the choice of business owners for it's
+        instant attention grabbing design.
+      </p>
+    </div>
+
+    <!-- BOX - 2 - Banner Flex -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#billboard"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">Flex Printing</a></h4>
+      <p class="services__description">
+        What else other than a gigantic banner calls your name out loud ?
+      </p>
+    </div>
+
+    <!-- BOX - 3 - Vinyal Printing -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon vinyl-icon">
+          <use xlink:href="img/sprite.svg#printer-1"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">Vinyl Printing</a></h4>
+      <p class="services__description">
+        Known for its clarity and actual representation of colours is often
+        the choice for enchanting posters and stickers
+      </p>
+    </div>
+
+    <!-- BOX - 4 - Standees -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#roll-up"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">Standees</a></h4>
+      <p class="services__description">
+        Hastle free, easy to carry, your branding friend. An Elegant way to
+        awe the bypassers with your posters
+      </p>
+    </div>
+
+    <!-- BOX - 5 - LED boards -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#led"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">LED Boards</a></h4>
+      <p class="services__description">
+        Eye catching, essential for a urban shopping outlets that gives a
+        solid branding.
+      </p>
+    </div>
+
+    <!-- BOX - 6 - Vehicle Brandng -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#delivery-truck"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">Vehicle Branding</a></h4>
+      <p class="services__description">
+        What other better ways to market your brand than a moving vehicle
+        around the city.
+      </p>
+    </div>
+
+    <!-- BOX - 7 - Broucher Printing -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#triptych-brochure"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">Broucher Printing</a></h4>
+      <p class="services__description">
+        "A picture is worth a thousand words", convince your clients with
+        the ease of visual media
+      </p>
+    </div>
+
+    <!-- BOX - 8 - Tshirt Printing -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#shirt"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">T-shirt Printing</a></h4>
+      <p class="services__description">
+        With the overwhelming choice of clothing, but you need the one that
+        speaks your mind
+      </p>
+    </div>
+
+    <!-- BOX - 9 - Visitng Card -->
+    <div class="services__box">
+      <div class="services__icon-wrap">
+        <svg class="services__icon">
+          <use xlink:href="img/sprite.svg#business-cards"></use>
+        </svg>
+      </div>
+      <h4 class="services__title"><a href="">Visiting Cards</a></h4>
+      <p class="services__description">
+        Impress the clients with a confidence of a well crafted visiting
+        card.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="portfolio">
+
+  <div class="portfolio__wrap width-70">
+
+  <h2 class="portfolio-heading">PORTFOLIO</h2>
+  
+  <div class="portfolio__gallery">
+  <div class="item item--2x2">
+  <a href="img/portfolio/1.JPG"><img src="img/portfolio/1.JPG" alt=""></a>
+  </div>
+  <div class="item item--1x2">
+  <a href="img/portfolio/2.JPG"><img src="img/portfolio/2.JPG" alt=""></a>
+  </div>
+  <div class="item item--2x1">
+  <a href="img/portfolio/3.jpeg"><img src="img/portfolio/3.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x1">
+  <a href="img/portfolio/4.jpeg"><img src="img/portfolio/4.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x2">
+  <a href="img/portfolio/5.jpeg"><img src="img/portfolio/5.jpeg" alt=""></a>
+  </div>
+  <div class="item item--2x1">
+  <a href="img/portfolio/6.jpeg"><img src="img/portfolio/6.jpeg" alt=""></a>
+  </div>
+  <div class="item item--2x2">
+  <a href="img/portfolio/7.jpeg"><img src="img/portfolio/7.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x1">
+  <a href="img/portfolio/8.jpeg"><img src="img/portfolio/8.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x2">
+  <a href="img/portfolio/9.jpeg"><img src="img/portfolio/9.jpeg" alt=""></a>
+  </div>
+  <div class="item item--2x1">
+  <a href="img/portfolio/10.jpeg"><img src="img/portfolio/10.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x2">
+  <a href="img/portfolio/18.jpeg"><img src="img/portfolio/18.jpeg" alt=""></a>
+  </div>
+  <div class="item item--2x2">
+  <a href="img/portfolio/11.JPG"><img src="img/portfolio/11.JPG" alt=""></a>
+  </div>
+  <div class="item item--2x1">
+  <a href="img/portfolio/12.jpg"><img src="img/portfolio/12.jpg" alt=""></a>
+  </div>
+  <div class="item item--1x1">
+  <a href="img/portfolio/13.jpg"><img src="img/portfolio/13.jpg" alt=""></a>
+  </div>
+  <div class="item item--1x2">
+  <a href="img/portfolio/14.jpg"><img src="img/portfolio/14.jpg" alt=""></a>
+  </div>
+  <div class="item item--1x1">
+  <a href="img/portfolio/15.jpeg"><img src="img/portfolio/15.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x1">
+  <a href="img/portfolio/16.jpeg"><img src="img/portfolio/16.jpeg" alt=""></a>
+  </div>
+  <div class="item item--1x1">
+  <a href="img/portfolio/17.jpeg"><img src="img/portfolio/17.jpeg" alt=""></a>
+  </div>
+  </div>
+</div>
+
+</section>
+
+<section class="team width-70">
+  <h2 class="team-heading">TEAM</h2>
+
+
+  <div class="swiper-container team-swiper-container">
+    <div class="swiper-wrapper">
+      <div class="team__wrap swiper-slide">
+        <div class="team__box">
+          <img src="img/team-1.jpg" alt="">
+          <h4>Devraj</h4>
+          <p> Chief Executive Officer</p>
+        </div>
+      </div>
+      <div class="team__wrap swiper-slide">
+        <div class="team__box">
+          <img src="img/team-2.jpg" alt="">
+          <h4>Manideep</h4>
+          <p>Manager</p>
+        </div>
+        </div>
+      <div class="team__wrap swiper-slide">
+          <div class="team__box">
+            <img src="img/team-3.jpg" alt="">
+            <h4>Md. Mansoor</h4>
+            <p>Supervisor</p>
+          </div>
+        </div>
+      <div class="team__wrap swiper-slide">
+          <div class="team__box">
+            <img src="img/team-4.jpg" alt="">
+            <h4>Jeeva</h4>
+            <p> Team Leader</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2 class="contact-heading width-70">CONTACT</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.815345809535!2d77.51921181421991!3d12.98365939084791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae137168bb998f%3A0xff0bdccb1174d011!2sDev+Groups!5e0!3m2!1sen!2sin!4v1559035034026!5m2!1sen!2sin" style="border:0" allowfullscreen="" width="100%" height="380" frameborder="0" ></iframe>
+   <div class="contact__wrap">
+     
+     
+     <div class="width-70">
+      <div class="contact__branch">
+        <h3 class="contact__branch-heading">Upcoming Branches</h3>
+        <div class="contact__branch-wrap">
+          <div class="contact__branch-1">
+            <img src="img/chennai.jpg" alt="">
+            <h3>Chenani</h3>
+          </div>
+          <div class="contact__branch-1">
+            <img src="img/Hyderabad.jpg" alt="">
+            <h3>Hyderabad</h3>
+          </div>
+      </div>
+      </div>
+
+      <div class="contact__address">
+        <div class="address_section">
+          <div class="address">
+            <svg class="address_icon">
+              <use xlink:href="img/sprite.svg#maps-and-flags"></use>
+            </svg>
+          <p>#6&7, Pete Chennappa
+            Industrial Estate, Kamakshipalya,
+            Magadi Main Road
+            Bengaluru-560079 </p>
+          </div>
+          <div class="phone">
+            <svg class="phone_icon">
+              <use xlink:href="img/sprite.svg#telephone"></use>
+            </svg>
+            <p>+91 9035115075</p>
+          </div>
+          <div class="social">
+            <a href="#">
+              <svg class="social_icon">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+                <svg class="social_icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+
+              <a href="#">
+                  <svg class="social_icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+             
+          </div>
+        </div>
+        <div class="address_form">
+          <form action="">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Subject">
+            <textarea name="" placeholder="Message"></textarea>
+          </form>
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+<section class="footer">
+  <p>© Copyright Dev Printers. All Rights Reserved </p>
+</section>
+
+
+
 <script src="script/swiper.min.js"></script>
+<script src="script/simpleLightbox.min.js"></script>
 <script src="script/main.js"></script>
 
 </html>

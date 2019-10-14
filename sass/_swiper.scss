@@ -1,17 +1,52 @@
-.swiper-slide {
+.choose .swiper-slide {
  text-align: center;
  /* Center slide text vertically */
  display: flex;
- align-items: center;
  flex-direction: column;
+ align-items: center;
  justify-items: center;
- background-color: #fff;
+ background-color: $white;
  border-radius: 3px;
- height: 21rem;
- box-sizing: initial;
+ box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 16px 0px;
+ box-sizing: border-box;
+ padding: 2rem;
+
+ @include respond(tab-big) {
+  margin-bottom: 3rem;
+  height: 12rem !important;
+  flex-direction: row;
+ }
 }
 
 
-.slider-padding {
- padding: 1.2rem 1.5rem;
+.choose .swiper-container {
+ width: 100%;
+ display: flex;
+
+ @include respond(tab) {
+  width: 80% !important;
+ }
+
+ @include respond(tab-big) {
+  width: 100%;
+ }
+}
+
+.choose .swiper-wrapper {
+ height: auto;
+
+ @include respond(tab-big) {
+  width: 50%;
+  height: 18rem;
+  margin-left: auto;
+ }
+
+ @include respond(laptop) {
+  width: 40%;
+ }
+}
+
+.choose .swiper-slide {
+ background-size: cover;
+ background-position: center;
 }

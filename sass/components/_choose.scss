@@ -1,0 +1,57 @@
+.choose {
+ background: url('../img/about-img_3.jpg');
+ // background-color: gray;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ text-align: center;
+ padding: 3rem;
+
+
+ // .swiper-container {
+
+ //  @include respond(tab-big) {
+ //   width: 50%;
+ //   margin-left: 40rem;
+ //  }
+ // }
+
+ // .swiper-slide {
+ //  // background-color: $background-white;
+ // }
+
+ [class^="choose__icon"] {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+ }
+
+ &__icon {
+
+  &-startup {
+   fill: #623BB8;
+  }
+
+  &-wallet {
+   fill: #FEE827;
+  }
+
+  &-quality {
+   fill: #E946A6;
+  }
+
+  &-services {
+   fill: #6FDFED;
+  }
+ }
+
+}
+
+.swiper-right {
+ margin-bottom: 1rem;
+
+ @include respond(tab-big) {
+  margin-left: 1rem;
+ }
+}

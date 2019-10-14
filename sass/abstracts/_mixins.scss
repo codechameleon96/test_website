@@ -1,0 +1,60 @@
+@mixin respond($breakpoint) {
+
+    @if $breakpoint==big-phone {
+
+        //448
+        @media only screen and (min-width: 28em) {
+            @content
+        }
+
+        ;
+
+    }
+
+
+    @if $breakpoint==tab {
+
+        //600px
+        @media only screen and (min-width: 37.5em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tab-big {
+
+        //900px
+        @media only screen and (min-width: 56.25em) {
+            @content
+        }
+
+        ;
+
+    }
+
+    @if $breakpoint==laptop {
+
+        //1200px
+        @media only screen and (min-width: 75em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==desktop {
+
+        //1440
+        @media only screen and (min-width: 90em) {
+            @content
+        }
+
+        ;
+    }
+}
+
+@mixin section-margin {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}

@@ -1,39 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Poppins:700|Rubik:700&display=swap');
-
-// COLOR VARIABLES
-$color-primary: #00B8FF;
-$color-primary-dark: #0092ff;
-
-// $color-secondary: #fe4a49;
-$color-secondary: #fa2020;
-// $color-secondary-dark: #e74443;
-$color-secondary-dark: #f54b3f;
-// $color-secondary-dark: #3c3ed0;
-// $color-secondary: #9d49fe;
-
-$color-grey-light-1: #ECECEC;
-$color-grey-light-2: #aaa;
-
-$color-grey-dark-1: #666;
-$color-grey-dark-2: #6D5D4B;
-
-$font-color-black: rgb(41, 41, 41);
-
-
-// FONT VARIABLES
-$font-primary: 'Lato',
-sans-serif;
-$font-secondary: 'Poppins',
-sans-serif;
-$font-heading: 'Rubik',
-sans-serif;
-
-
-// RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; // 1200px
-$bp-large: 62.5em; // 1000px
-$bp-medium: 50em; // 800px;
-$bp-small: 37.5em; // 600px;
+@import 'https://fonts.googleapis.com/css?family=Rubik:700,500|Lato:400';
 
 
 *,
@@ -46,12 +11,36 @@ $bp-small: 37.5em; // 600px;
 
 html {
  box-sizing: border-box;
- font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+ font-size: 62.5%;
+
+ @include respond(tab) {
+  font-size: 87.5%;
+  //600+
+ }
+
+
+ @include respond(tab-big) {
+  font-size: 93.75%;
+  //900+
+ }
+
+
+ @include respond(laptop) {
+  font-size: 100%;
+  //1200+
+ }
+
 }
 
-body {
- font-family: $font-primary;
- color: $color-grey-dark-2;
- font-weight: 300;
- line-height: 1.6;
-}
+// @include respond(tab-port) {
+//  //900
+//  padding: 20rem 0;
+// }
+
+// @include respond(tab-land) {
+//  //1200
+// }
+
+// @include respond(big-desktop) {
+//  //1440
+// }

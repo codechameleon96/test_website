@@ -1,0 +1,22 @@
+.clients {
+ background-color: $background-white;
+
+ @include section-margin;
+ padding: 3rem;
+
+ &__logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1.5rem;
+
+  img {
+   width: 100%;
+  }
+ }
+
+ &-h2 {
+  margin-bottom: 2rem;
+ }
+
+
+}

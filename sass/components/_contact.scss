@@ -1,0 +1,136 @@
+.contact {
+ background-color: $background-white;
+ padding: 4rem 0;
+
+
+ &__wrap {
+  padding: 2rem;
+ }
+
+ &-heading {
+  padding: 3rem 2rem;
+ }
+
+ iframe {
+  padding: 0;
+ }
+
+ &__branch {
+  margin: 4rem 0;
+
+  &-heading {
+   margin-bottom: 4rem;
+  }
+
+  &-wrap {
+   display: flex;
+   text-align: center;
+   margin-top: 2rem;
+   justify-content: center;
+  }
+
+  img {
+   width: 100%;
+   border-radius: 3px;
+  }
+
+  &-1,
+  &-2 {
+   width: 100px;
+
+   @include respond(tab-big) {
+    width: 200px;
+    height: 200px;
+   }
+  }
+
+  &-1 {
+   margin-right: 6rem;
+  }
+ }
+
+
+ &__address {
+  margin-top: 6rem;
+  display: grid;
+  grid-column-gap: 20px;
+
+
+  @include respond(tab-big) {
+   grid-template-columns: repeat(2, 1fr);
+   margin-top: 12rem;
+  }
+
+
+  .address_section {
+
+   margin-bottom: 5rem;
+
+   .address,
+   .phone {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+
+    &_icon {
+     width: 2rem;
+     height: 2rem;
+     margin-right: 2rem;
+     fill: $blue;
+    }
+   }
+  }
+
+  .social {
+   display: flex;
+   font-size: 0;
+   margin-top: 2rem;
+
+   &_icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    fill: $blue;
+
+    &:hover {
+     opacity: .8;
+    }
+   }
+  }
+ }
+
+ .address_form {
+  form {
+   display: flex;
+   flex-direction: column;
+   font-family: inherit;
+
+   input {
+    border: 1px solid gray;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+
+    &:focus {
+     border: 1px solid $blue;
+    }
+   }
+
+   textarea {
+    height: 6rem;
+    border: 1px solid gray;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 3px;
+
+    &:focus {
+     border: 1px solid $blue;
+    }
+   }
+  }
+ }
+
+
+}

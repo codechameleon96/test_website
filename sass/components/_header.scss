@@ -1,0 +1,56 @@
+.header {
+ height: 100vh;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ align-items: center;
+ justify-items: center;
+
+ &__img-1 {
+  grid-column: 1 / -1;
+  grid-row: 1/-1;
+ }
+
+ &__img-2 {
+  grid-column: 1 / -1;
+  grid-row: 1/-1;
+  position: relative;
+  z-index: 10;
+ }
+
+ &__heading {
+  grid-column: 1 / -1;
+  grid-row: 1/ -1;
+  position: relative;
+  z-index: 9;
+  margin-right: 30vw;
+ }
+
+ img {
+  width: 100%;
+
+  @include respond(big-phone) {
+   width: 90%;
+  }
+
+
+  @include respond(tab) {
+   width: 80%;
+  }
+
+  @include respond(tab-big) {
+   width: 70%;
+  }
+
+  @include respond(laptop) {
+   width: 55%;
+  }
+
+
+ }
+
+ &__devgroups {
+  display: inline-block;
+  animation: moveRight 3s infinite ease;
+ }
+
+}

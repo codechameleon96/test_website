@@ -1,0 +1,137 @@
+.nav {
+ position: relative;
+ // SPlit Nav into two rows (Destop-Nav , Dropdown-nav)
+ display: grid;
+ grid-template-rows: minmax(min-content, 4rem) min-content;
+ margin-top: 3rem;
+
+
+ // Make NavItems(Logo, Nav-links, Button) align horizontally
+ &__wrap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content min-content;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+ }
+
+ // Change font-styles for nav-links and dropdown-links
+ &__links>a,
+ &__dropdown>a {
+
+  &,
+  &:link,
+  &:visited {
+   text-decoration: none;
+   color: gray;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   font-weight: 900;
+   font-size: 13px;
+
+   @include respond(tab) {
+    font-size: 15px;
+    //600+
+   }
+  }
+
+  &:hover {
+   color: $blue;
+   transform: skew(-5deg);
+
+  }
+
+ }
+
+
+
+ // Allign Nav-links horizontally
+ &__links {
+  display: none;
+  grid-auto-flow: column;
+  grid-column-gap: 2rem;
+  transition: $default-transition;
+
+  @include respond(tab-big) {
+   display: grid;
+  }
+ }
+
+ &__dropdown {
+  background-color: $white;
+  opacity: 0;
+  height: 0;
+  transition: all 1s ease-out;
+  visibility: hidden;
+  padding-left: 2rem;
+  display: grid;
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  z-index: 999;
+ }
+
+ &__dropdown.active {
+  padding: 2rem 0;
+  padding-left: 2rem;
+  opacity: 1;
+  visibility: visible;
+  height: 20rem;
+ }
+
+ // Styling Hamburger-Icon
+ &__icon {
+  display: grid;
+  position: relative;
+  cursor: pointer;
+  background-color: $blue;
+  padding: .4rem;
+  border-radius: 3px;
+  width: 3rem;
+  height: 3rem;
+
+  @include respond(tab-big) {
+   display: none;
+  }
+
+  &-bar {
+   display: inline-block;
+   position: relative;
+   top: 1rem;
+
+   &,
+   &::before,
+   &::after {
+    background-color: $white;
+    width: 2rem;
+    height: 2px;
+   }
+
+   &::before,
+   &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+   }
+
+   &::before {
+    top: 0.5rem;
+   }
+
+   &::after {
+    top: -0.5rem;
+   }
+  }
+ }
+
+ &__logo {
+  width: 10rem;
+  background-color: $blue;
+  border-radius: 3px;
+ }
+
+
+
+}
